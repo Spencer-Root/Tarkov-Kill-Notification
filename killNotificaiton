@@ -9,7 +9,7 @@ before = len(os.listdir())
 while 1:
     time.sleep(1)
     after = len(os.listdir())
-    if after != before:
+    if after > before:
         print('Added')
         winsound.PlaySound(r'C:/Users/spenc/PycharmProjects/killSound/Sound.WAV', winsound.SND_ASYNC)
         before = after
